@@ -20,20 +20,20 @@ import org.jspecify.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class KnockBackStickRecipe extends CustomRecipe {
+public class KnockbackStickRecipe extends CustomRecipe {
     
-    public static final MapCodec<KnockBackStickRecipe> MAP_CODEC = MapCodec.unit(
-            KnockBackStickRecipe::new
+    public static final MapCodec<KnockbackStickRecipe> MAP_CODEC = MapCodec.unit(
+            KnockbackStickRecipe::new
     );
-    public static final StreamCodec<RegistryFriendlyByteBuf, KnockBackStickRecipe> STREAM_CODEC = StreamCodec.unit(
-            new KnockBackStickRecipe()
+    public static final StreamCodec<RegistryFriendlyByteBuf, KnockbackStickRecipe> STREAM_CODEC = StreamCodec.unit(
+            new KnockbackStickRecipe()
     );
-    public static final RecipeSerializer<KnockBackStickRecipe> SERIALIZER = new RecipeSerializer<>(MAP_CODEC, STREAM_CODEC);
+    public static final RecipeSerializer<KnockbackStickRecipe> SERIALIZER = new RecipeSerializer<>(MAP_CODEC, STREAM_CODEC);
     
     @Nullable
     private Holder<Enchantment> cachedKnockbackHolder = null;
     
-    public KnockBackStickRecipe() {
+    public KnockbackStickRecipe() {
     
     }
     
@@ -49,7 +49,7 @@ public class KnockBackStickRecipe extends CustomRecipe {
     
     @Override
     public String group() {
-        return "KnockBack Stick";
+        return "Knockback Stick";
     }
     
     @Override

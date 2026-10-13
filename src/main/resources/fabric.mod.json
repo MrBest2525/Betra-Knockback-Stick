@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "betra-knockback-stick",
   "version": "${version}",
-  "name": "Betra: KnockBack Stick",
-  "description": "Betra: KnockBack Stick",
+  "name": "Betra: Knockback Stick",
+  "description": "Betra: Knockback Stick",
   "authors": [],
   "contact": {},
   "license": "MIT",
@@ -17,7 +17,7 @@
       "io.github.mrbest2525.betraknockbackstick.client.BetraKnockbackStickClient"
     ],
     "main": [
-      "io.github.mrbest2525.betraknockbackstick.BetraKnockBackStick"
+      "io.github.mrbest2525.betraknockbackstick.BetraKnockbackStick"
     ]
   },
   "depends": {

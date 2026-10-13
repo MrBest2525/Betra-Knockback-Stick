@@ -1,7 +1,7 @@
 package io.github.mrbest2525.betraknockbackstick.client;
 
-import io.github.mrbest2525.betraknockbackstick.BetraKnockBackStick;
-import io.github.mrbest2525.betraknockbackstick.recipe.KnockBackStickRecipe;
+import io.github.mrbest2525.betraknockbackstick.BetraKnockbackStick;
+import io.github.mrbest2525.betraknockbackstick.recipe.KnockbackStickRecipe;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -27,8 +27,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 // ここで特殊レシピ（CustomRecipe）のJSONを出力する
                 // 特殊レシピはシリアライザのタイプ名のみを指定して出力します
                 output.accept(
-                        ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(BetraKnockBackStick.MOD_ID, "knockback_stick")),
-                        new KnockBackStickRecipe(),
+                        ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(BetraKnockbackStick.MOD_ID, "knockback_stick")),
+                        new KnockbackStickRecipe(),
                         null
                 );
             }
