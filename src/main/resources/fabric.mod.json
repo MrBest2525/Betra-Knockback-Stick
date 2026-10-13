@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "betra-knockback-stick",
+  "version": "${version}",
+  "name": "Betra: KnockBack Stick",
+  "description": "Betra: KnockBack Stick",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/betra-knockback-stick/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "io.github.mrbest2525.betraknockbackstick.client.BetraKnockbackStickDataGenerator"
+    ],
+    "client": [
+      "io.github.mrbest2525.betraknockbackstick.client.BetraKnockbackStickClient"
+    ],
+    "main": [
+      "io.github.mrbest2525.betraknockbackstick.BetraKnockBackStick"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
